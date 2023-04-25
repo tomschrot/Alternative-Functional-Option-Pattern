@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+
+    <OutputType>Exe</OutputType>
+
+	  <LangVersion>11</LangVersion>
+    <TargetFramework>net7.0</TargetFramework>
+
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <DefineConstants>_TEST_</DefineConstants>
+
+    <NoWarn>$(NoWarn),IDE0044, IDE1006, IDE0060, IDE0075</NoWarn>
+
+    <Version>0.1.0-Beta</Version>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="System"></Using>
+    <Using Include="System.IO"></Using>
+
+    <Using Include="System.Text"></Using>
+    <Using Include="System.Text.Json"></Using>
+
+    <!-- If there is a conflict, remove a namespace! -->
+    <Using Remove="System.Reflection"></Using>
+
+    <Using Include="System.Collections.Generic"></Using>
+
+    <Using Include="System.Threading"></Using>
+    <Using Include="System.Threading.Tasks"></Using>
+
+    <!-- You can also have static usings (see Program Writeline) -->
+    <Using Include="System.Console" Static="True"></Using>
+  </ItemGroup>
+
+</Project>
